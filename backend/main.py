@@ -9,6 +9,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from database.db import engine, Base
 from routes import rights, rti, schemes, complaints, dashboard
+from services.seed_service import seed_if_empty
+from database.db import get_db
+from fastapi import Depends
+from sqlalchemy.orm import Session
 
 # Create all tables on startup (SQLite — zero config)
 Base.metadata.create_all(bind=engine)
@@ -47,3 +51,6 @@ def root():
 @app.get("/api/health")
 def health():
     return {"status": "ok"}
+@app.get("/api/seed")
+def seed_demo_data(db: Session = Depends(get_db)):
+    return seed_if_empty(db)
