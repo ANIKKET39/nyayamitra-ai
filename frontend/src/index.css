@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-surface text-ink font-sans antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.card {
+  @apply bg-white rounded-2xl border border-slate-200/70 shadow-card;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-2.5
+    text-sm font-semibold text-white shadow-soft transition-all duration-200
+    hover:bg-brand-700 hover:shadow-md active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-2.5
+    text-sm font-semibold text-brand-700 border border-brand-200 transition-all duration-200
+    hover:bg-brand-50 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.input-field {
+  @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-ink
+    placeholder:text-slate-400 shadow-sm transition-all duration-150
+    focus:border-brand-400 focus:outline-none focus:ring-4 focus:ring-brand-100;
+}
+
+.label-text {
+  @apply mb-1.5 block text-sm font-medium text-slate-700;
+}
+
+.section-eyebrow {
+  @apply inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-700;
+}

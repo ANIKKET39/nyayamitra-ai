@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.db
+
+# Node
+node_modules/
+dist/
+.env
+
+# Generated files
+backend/generated_pdfs/*.pdf
+
+# OS
+.DS_Store

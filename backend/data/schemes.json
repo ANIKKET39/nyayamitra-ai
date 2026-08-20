@@ -1,0 +1,155 @@
+[
+  {
+    "id": "pmjay",
+    "name": "Ayushman Bharat - PM Jan Arogya Yojana (PM-JAY)",
+    "category": "Healthcare",
+    "description": "Health insurance cover of Rs. 5 lakh per family per year for secondary and tertiary hospitalization.",
+    "benefits": ["Rs. 5,00,000 health cover per family per year", "Cashless treatment at empanelled hospitals", "Covers pre-existing diseases"],
+    "required_documents": ["Aadhaar Card", "Ration Card / SECC family ID", "Income Certificate"],
+    "eligibility": {
+      "max_income": 250000,
+      "occupations": ["any"],
+      "min_age": 0,
+      "max_age": 200,
+      "states": ["all"]
+    }
+  },
+  {
+    "id": "pmkisan",
+    "name": "PM-KISAN Samman Nidhi",
+    "category": "Agriculture",
+    "description": "Income support of Rs. 6000 per year to small and marginal farmer families.",
+    "benefits": ["Rs. 6,000/year in 3 equal installments", "Direct bank transfer (DBT)"],
+    "required_documents": ["Aadhaar Card", "Land ownership records", "Bank passbook"],
+    "eligibility": {
+      "max_income": 999999999,
+      "occupations": ["farmer"],
+      "min_age": 18,
+      "max_age": 200,
+      "states": ["all"]
+    }
+  },
+  {
+    "id": "pmuy",
+    "name": "Pradhan Mantri Ujjwala Yojana",
+    "category": "Household",
+    "description": "Free LPG gas connections to women from BPL households.",
+    "benefits": ["Free LPG connection", "First cylinder + stove support"],
+    "required_documents": ["Aadhaar Card", "BPL Ration Card", "Bank account"],
+    "eligibility": {
+      "max_income": 200000,
+      "occupations": ["any"],
+      "genders": ["female"],
+      "min_age": 18,
+      "max_age": 200,
+      "states": ["all"]
+    }
+  },
+  {
+    "id": "nsp",
+    "name": "National Scholarship Portal - Post Matric Scholarship",
+    "category": "Education",
+    "description": "Financial assistance for students from economically weaker sections pursuing post-matric education.",
+    "benefits": ["Tuition fee reimbursement", "Maintenance allowance"],
+    "required_documents": ["Aadhaar Card", "Income Certificate", "Previous year mark sheet", "Bonafide student certificate"],
+    "eligibility": {
+      "max_income": 250000,
+      "occupations": ["any"],
+      "student_status": ["yes"],
+      "min_age": 15,
+      "max_age": 35,
+      "states": ["all"]
+    }
+  },
+  {
+    "id": "pmawas",
+    "name": "Pradhan Mantri Awas Yojana (Urban/Gramin)",
+    "category": "Housing",
+    "description": "Financial assistance and interest subsidy for construction/purchase of homes for economically weaker sections.",
+    "benefits": ["Interest subsidy up to Rs. 2.67 lakh", "Direct assistance for house construction (rural)"],
+    "required_documents": ["Aadhaar Card", "Income Certificate", "Property/land documents"],
+    "eligibility": {
+      "max_income": 1800000,
+      "occupations": ["any"],
+      "min_age": 21,
+      "max_age": 200,
+      "states": ["all"]
+    }
+  },
+  {
+    "id": "sukanya",
+    "name": "Sukanya Samriddhi Yojana",
+    "category": "Savings",
+    "description": "Small savings scheme for the girl child offering high interest and tax benefits.",
+    "benefits": ["High interest rate (govt-backed)", "Tax exemption under Section 80C", "Maturity at age 21"],
+    "required_documents": ["Girl child's birth certificate", "Aadhaar Card of parent/guardian"],
+    "eligibility": {
+      "max_income": 999999999,
+      "occupations": ["any"],
+      "genders": ["female"],
+      "min_age": 0,
+      "max_age": 10,
+      "states": ["all"]
+    }
+  },
+  {
+    "id": "pmegp",
+    "name": "Prime Minister's Employment Generation Programme (PMEGP)",
+    "category": "Employment",
+    "description": "Credit-linked subsidy for setting up micro-enterprises to generate self-employment.",
+    "benefits": ["Subsidy of 15-35% of project cost", "Bank loan facilitation"],
+    "required_documents": ["Aadhaar Card", "Project report", "Educational qualification proof (8th pass min)"],
+    "eligibility": {
+      "max_income": 999999999,
+      "occupations": ["unemployed", "self-employed", "any"],
+      "min_age": 18,
+      "max_age": 35,
+      "states": ["all"]
+    }
+  },
+  {
+    "id": "nps_traders",
+    "name": "PM Laghu Vyapari Maan-dhan Yojana",
+    "category": "Pension",
+    "description": "Pension scheme for small shopkeepers and self-employed traders.",
+    "benefits": ["Rs. 3,000/month pension after age 60", "Government co-contribution"],
+    "required_documents": ["Aadhaar Card", "GSTIN (if applicable)", "Bank passbook"],
+    "eligibility": {
+      "max_income": 999999999,
+      "occupations": ["self-employed", "trader"],
+      "min_age": 18,
+      "max_age": 40,
+      "states": ["all"]
+    }
+  },
+  {
+    "id": "mudra",
+    "name": "Pradhan Mantri MUDRA Yojana",
+    "category": "Employment",
+    "description": "Collateral-free loans up to Rs. 10 lakh for non-corporate, non-farm small/micro enterprises.",
+    "benefits": ["Loans without collateral", "Three categories: Shishu, Kishor, Tarun"],
+    "required_documents": ["Aadhaar Card", "Business plan", "Bank statements"],
+    "eligibility": {
+      "max_income": 999999999,
+      "occupations": ["self-employed", "trader", "any"],
+      "min_age": 18,
+      "max_age": 65,
+      "states": ["all"]
+    }
+  },
+  {
+    "id": "pmvvy",
+    "name": "Pradhan Mantri Vaya Vandana Yojana",
+    "category": "Pension",
+    "description": "Pension scheme for senior citizens providing assured returns.",
+    "benefits": ["Assured pension for 10 years", "Guaranteed interest rate"],
+    "required_documents": ["Aadhaar Card", "Age proof", "Bank passbook"],
+    "eligibility": {
+      "max_income": 999999999,
+      "occupations": ["any"],
+      "min_age": 60,
+      "max_age": 200,
+      "states": ["all"]
+    }
+  }
+]
